@@ -9,9 +9,11 @@
 
 두 가지 모드 ECB와 CBC모드에 대해 분석하기 위해 TEA 알고리즘을 사용하였다. 그 코드는 아래와 같다.
 
-import java.util.*;
+	```java
 
-public class TEA{
+	import java.util.*;
+
+	public class TEA{
 
 	protected static int delta = 0x9e3779b9;
 	protected static int ROUNDS = 32;
@@ -51,15 +53,19 @@ public class TEA{
 		}
 	}
 	
-}
+	}
+
+	```
+
+
 
 # Alice_ECB.bmp
 
 ECB 모드로 암호화했을 경우의 코드 일부분이다.
 
-import java.util.*;
+	import java.util.*;
 
-public class ECB extends TEA{
+	public class ECB extends TEA{
 
 
 	public ECB(){
@@ -102,7 +108,7 @@ public class ECB extends TEA{
 
 	}
 
-}
+	}
 
 ![alice_ECB](https://user-images.githubusercontent.com/45475182/69909695-76b21200-1442-11ea-90ee-4fa8aecdc3bd.png)
 
@@ -112,9 +118,9 @@ public class ECB extends TEA{
 
 CBC 모드로 암호화했을 경우의 코드 일부분이다.
 
-import java.util.*;
+	import java.util.*;
 
-public class CBC extends TEA{
+	public class CBC extends TEA{
 
 
 	public CBC(){
@@ -157,7 +163,7 @@ public class CBC extends TEA{
 
 	}
 
-}
+	}
 
 ![alice_CBC](https://user-images.githubusercontent.com/45475182/69909697-774aa880-1442-11ea-8007-d3828b4ed653.png)
 
