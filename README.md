@@ -7,9 +7,10 @@
 
 위의 사진은 보호하기 전의 Alice 사진이다.
 
-두 가지 모드 ECB와 CBC모드에 대해 분석하기 위해 TEA 알고리즘을 사용하였다. 그 코드는 아래와 같다.
+# Alice_TEA
 
-	```java
+두 가지 모드 ECB와 CBC모드에 대해 분석하기 위해 TEA 알고리즘을 사용하였다.
+
 
 	import java.util.*;
 
@@ -54,9 +55,6 @@
 	}
 	
 	}
-
-	```
-
 
 
 # Alice_ECB.bmp
